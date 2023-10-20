@@ -1,0 +1,74 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background: url(assets/wallpaper.jpg)center center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-principal{
+    width: 80vw;
+    max-width: 600px;
+    height: 30vh;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.contenedor-botones{
+    padding: 20px;
+}
+
+#cronometro{
+    width: 100%;
+    font-size: 80px;
+    user-select: none;
+
+}
+
+.boton{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    filter: drop-shadow(0 0 10px #dcdcdc);
+}
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar {
+    background: url(assets/playicon.png) center center/cover no-repeat;
+    border: none;
+   
+}
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar {
+    background: url(assets/pauseicon.png) center center/cover no-repeat;
+    border: none;
+}
+
+#boton-reiniciar{
+    background: url(assets/replayicon.png) center center/cover no-repeat;
+    border: none;
+}
